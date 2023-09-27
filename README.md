@@ -7,7 +7,6 @@ To Interface a push button and generate an interrupt , simulate it using an led 
 STM32 CUBE IDE, Proteus 8 simulator .
 
 ### Theory:
-
 ARM v7 Core supports multiple great features for handling exceptions and interrupts. Which includes the Nested Vectored Interrupt Controller (NVIC).
 
 Micro-Coded Architecture So that interrupt stacking, entry, and exit are done automatically in hardware. Which offloads this work overhead from the CPU
@@ -86,17 +85,33 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
 ![image](https://user-images.githubusercontent.com/36288975/233856904-99eb708a-c907-4595-9025-c9dbd89b8879.png)
 
 
-  
 
 ## STM 32 CUBE PROGRAM :
-
+```
+Developed By: G Venkata Pavan Kumar
+Reg No: 212221240013
+```
+```c
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	if((GPIO_Pin == GPIO_PIN_0))
+	{
+		HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_1);
+	}
+}
+```
 
 
 ## Output screen shots of proteus  :
+**ON State:**
+![o1](https://github.com/Pavan-Gv/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/94827772/18f3c4ce-4be2-440e-80d6-ae9e3d023161)
+**OFF State:**
+![o2](https://github.com/Pavan-Gv/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/94827772/f3657bc5-c823-44dd-a230-fd14cc147eed)
  
- 
- ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- 
- 
+## CIRCUIT DIAGRAM : 
+
+![o3](https://github.com/Pavan-Gv/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/94827772/824a7b8a-a03b-477f-bf43-396d052fcf00)
+
+
 ## Result :
 Interfacing a push button and interrupt genrateion is simulated using proteus 
