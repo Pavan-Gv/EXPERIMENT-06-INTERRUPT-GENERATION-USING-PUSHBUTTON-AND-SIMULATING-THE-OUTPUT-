@@ -104,15 +104,26 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
 ## Output screen shots of proteus  :
 **OFF State:**
+
 </br>
+</br>
+
 ![o1](https://github.com/Pavan-Gv/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/94827772/18f3c4ce-4be2-440e-80d6-ae9e3d023161)
 
+</br>
+</br>
 
 **ON State:**
+
 </br>
+</br>
+
 ![o2](https://github.com/Pavan-Gv/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/94827772/f3657bc5-c823-44dd-a230-fd14cc147eed)
  
 ## CIRCUIT DIAGRAM : 
+
+</br>
+</br>
 
 ![o3](https://github.com/Pavan-Gv/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/94827772/824a7b8a-a03b-477f-bf43-396d052fcf00)
 
